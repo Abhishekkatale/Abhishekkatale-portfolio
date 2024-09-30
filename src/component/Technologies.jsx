@@ -1,27 +1,41 @@
 import { RiReactjsLine } from "react-icons/ri";
 import { DiHtml5, DiCss3, DiJavascript1, DiMysql, DiMongodb, DiNodejsSmall } from "react-icons/di";
-import { SiExpress } from "react-icons/si"; // For Express.js
+import { SiExpress } from "react-icons/si";
 import { motion } from "framer-motion";
 
-const Technologies = () => {
-    // Animation variant for each icon
-    const iconVariants = {
-        hidden: { opacity: 0, scale: 0.8 },
-        visible: { opacity: 1, scale: 1 },
-    };
+const iconVariants = (duration) => ({
+    initial: { y: -10 },
+    animate: {
+        y: [10, -10],
+        transition: {
+            duration: duration,
+            ease: "linear",
+            repeat: Infinity,
+            repeatType: "reverse",
+        },
+    },
+});
 
+const Technologies = () => {
     return (
         <div className="border-b border-neutral-800 pb-24">
-            <h1 className="my-20 text-center text-4xl">Technologies</h1>
+            <motion.h1
+             whileInView={{opacity: 1, y: 0}}
+             initial={{opacity: 0, y: -100}}
+             transition={{duration: 1.5 }} 
+            className="my-20 text-center text-4xl">Technologies</motion.h1>
 
-            <div className="flex flex-wrap items-center justify-center gap-8">
+            <motion.div
+            whileInView={{opacity: 1, x: 0}}
+            initial={{opacity: 0, x: -100}}
+            transition={{duration: 1.5 }}
+             className="flex flex-wrap items-center justify-center gap-8">
                 {/* HTML */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
+                    variants={iconVariants(2.5)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <DiHtml5 className="text-7xl text-orange-500" />
                 </motion.div>
@@ -29,10 +43,9 @@ const Technologies = () => {
                 {/* CSS */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
+                    variants={iconVariants(3)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <DiCss3 className="text-7xl text-blue-500" />
                 </motion.div>
@@ -40,10 +53,9 @@ const Technologies = () => {
                 {/* JavaScript */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.3 }}
+                    variants={iconVariants(2)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <DiJavascript1 className="text-7xl text-yellow-400" />
                 </motion.div>
@@ -51,10 +63,9 @@ const Technologies = () => {
                 {/* MySQL */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.4 }}
+                    variants={iconVariants(6)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <DiMysql className="text-7xl text-blue-600" />
                 </motion.div>
@@ -62,10 +73,9 @@ const Technologies = () => {
                 {/* MongoDB */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
+                    variants={iconVariants(4)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <DiMongodb className="text-7xl text-green-600" />
                 </motion.div>
@@ -73,10 +83,9 @@ const Technologies = () => {
                 {/* Node.js */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.6 }}
+                    variants={iconVariants(6)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <DiNodejsSmall className="text-7xl text-green-500" />
                 </motion.div>
@@ -84,10 +93,9 @@ const Technologies = () => {
                 {/* Express.js */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.7 }}
+                    variants={iconVariants(3)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <SiExpress className="text-7xl text-gray-600" />
                 </motion.div>
@@ -95,14 +103,13 @@ const Technologies = () => {
                 {/* React */}
                 <motion.div
                     className="rounded-2xl border-4 border-neutral-800 p-6"
-                    initial="hidden"
-                    animate="visible"
-                    variants={iconVariants}
-                    transition={{ duration: 0.5, ease: "easeOut", delay: 0.8 }}
+                    variants={iconVariants(6)}
+                    initial="initial"
+                    animate="animate"
                 >
                     <RiReactjsLine className="text-7xl text-cyan-400" />
                 </motion.div>
-            </div>
+            </motion.div>
         </div>
     );
 };
