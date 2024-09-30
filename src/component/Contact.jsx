@@ -3,6 +3,30 @@ import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion"; // Ensure framer-motion is imported
 
 const Contact = () => {
+  // Social media links data
+  const socialLinks = [
+    {
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/in/abhishek-katale/",
+      label: "LinkedIn",
+    },
+    {
+      icon: <FaGithub />,
+      link: "https://github.com/Abhishekkatale",
+      label: "GitHub",
+    },
+    {
+      icon: <FaTwitter />,
+      link: "https://x.com/AbhishekKatale2",
+      label: "Twitter",
+    },
+    {
+      icon: <FaInstagram />,
+      link: "https://instagram.com/abhii____2304",
+      label: "Instagram",
+    },
+  ];
+
   return (
     <div className="border-b border-neutral-900 pb-20">
       {/* Animated Header */}
@@ -46,12 +70,7 @@ const Contact = () => {
 
       {/* Animated Social Media Icons */}
       <div className="flex justify-center space-x-6 mt-8">
-        {[
-          { icon: <FaLinkedin />, link: CONTACT.linkedin, label: "LinkedIn" },
-          { icon: <FaGithub />, link: CONTACT.github, label: "GitHub" },
-          { icon: <FaTwitter />, link: CONTACT.twitter, label: "Twitter" },
-          { icon: <FaInstagram />, link: CONTACT.instagram, label: "Instagram" },
-        ].map(({ icon, link, label }, index) => (
+        {socialLinks.map(({ icon, link, label }, index) => (
           <motion.a
             key={index}
             href={link}
@@ -60,7 +79,7 @@ const Contact = () => {
             aria-label={label}
             whileHover={{ scale: 1.2, rotate: 15 }} // Scale and rotate on hover
             transition={{ type: "spring", stiffness: 300 }}
-            className="text-2xl hover:transition-colors duration-300"
+            className="text-2xl hover:text-gray-400 transition-colors duration-300"
           >
             {icon}
           </motion.a>
