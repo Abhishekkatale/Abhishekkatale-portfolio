@@ -3,40 +3,44 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `At MusiTech, we're pushing the envelope in web development with innovative solutions that leverage my skills in React.js, HTML5, and CSS. My education at Savitribai Phule Pune University grounds my work in robust software development principles, ensuring that our interfaces not only engage users but also drive improved experiences.
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+My internship with the All India Council for Technical Education was a deep dive into AI and cloud computing, skills I now apply to my current role. With certifications in Generative AI and Responsible AI, I'm poised to support MusiTech's vision of advancing tech solutions, always aiming to integrate emerging technologies into our projects.`;
 
+export const ABOUT_TEXT = `At MusiTech, we are dedicated to delivering cutting-edge web development solutions, utilizing my expertise in React.js, HTML5, and CSS. My education at Savitribai Phule Pune University has provided me with a strong foundation in software development, enabling me to create user-friendly interfaces that not only engage but enhance overall user experiences.
+
+During my internship with the All India Council for Technical Education, I gained valuable insights into AI and cloud computing—knowledge that I now bring to my role at MusiTech. With certifications in Generative AI and Responsible AI, I’m excited to contribute to our mission of incorporating the latest technologies into our projects, helping drive innovation and tech-forward solutions.`;
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
+    year: "2024 - Present",
     role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
+    company: "Musitech",
+    description: `Leading a team to design, develop, and maintain web applications with a focus on performance and scalability. Utilizing JavaScript, React.js for the frontend, and Node.js for backend development. Implemented RESTful APIs and integrated MongoDB for data storage. Collaborating closely with stakeholders to gather requirements, prioritize features, and manage project timelines.`,
+    technologies: ["JavaScript", "React.js", "Node.js", "MongoDB"],
   },
   {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    year: "2023 - 2024",
+    role: "AI, Data Science, and Cloud Computing Intern",
+    company: "All India Council for Technical Education (AICTE)",
+    description: `Designed and developed user-friendly interfaces using Next.js and React. Integrated frontend components with backend services through Node.js APIs, ensuring seamless data flow. Leveraged cloud computing technologies on AWS to deploy and scale applications, while working on AI and ML projects to enhance decision-making processes.`,
+    technologies: ["AWS", "Cloud Computing", "AI", "ML", "Next.js", "React"],
+  },
+  {
+    year: "2023 - 2024",
+    role: "Data Analytics Intern",
+    company: "KPMG",
+    description: `Executed data-driven projects, performing data cleaning, statistical analysis, and visualizing insights to support business decisions. Developed RESTful APIs for efficient data handling and contributed to full-stack development using JavaScript and Python. Collaborated with cross-functional teams to deliver data analytics solutions that aligned with business goals.`,
+    technologies: ["Data Cleaning", "Statistical Analysis", "Data Visualization", "MySQL", "Python"],
+  },
+  {
+    year: "2023 - 2024",
+    role: "Frontend Developer",
+    company: "Saars Technology",
+    description: `Contributed to building responsive and visually appealing web applications using HTML, CSS, JavaScript, and React.js. Worked closely with product managers and developers to implement frontend features, ensuring seamless user experiences. Managed databases using MongoDB and optimized application performance.`,
+    technologies: ["HTML", "CSS", "JavaScript", "React.js", "MongoDB"],
   },
 ];
+
 
 export const PROJECTS = [
   {
