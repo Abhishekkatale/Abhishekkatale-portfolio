@@ -4,26 +4,53 @@
 
 
 /* Scrollbar Styles */
+
+/* Light mode scrollbar styles */
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #000000; /* Black background color of the track */
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #333333; /* Dark gray color of the draggable part of the scrollbar */
-    border-radius: 6px; /* Rounded corners of the scrollbar thumb */
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555555; /* Slightly lighter color of the scrollbar thumb on hover */
-  }
-  
-  /* For Firefox */
-  .scrollbar {
-    scrollbar-width: thin; /* Width of the scrollbar */
-    scrollbar-color: #333333 #000000; /* Scrollbar thumb and track color */
-  }
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888888; /* Medium gray color of the draggable part of the scrollbar */
+  border-radius: 6px; /* Rounded corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555; /* Darker gray color of the scrollbar thumb on hover */
+}
+
+/* Dark mode scrollbar styles */
+.dark ::-webkit-scrollbar-track {
+  background: #000000; /* Black background color of the track */
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #333333; /* Dark gray color of the draggable part of the scrollbar */
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #555555; /* Slightly lighter color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+/* Light mode scrollbar */
+html {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #888888 #f1f1f1; /* Scrollbar thumb and track color */
+}
+
+/* Dark mode scrollbar for Firefox */
+html.dark {
+  scrollbar-color: #333333 #000000; /* Scrollbar thumb and track color for dark mode */
+}
+
+/* It seems the .scrollbar class was intended for global Firefox styling.
+   However, Tailwind's 'dark' variant works by adding a class to the html element.
+   So, we target html and html.dark directly for Firefox scrollbar styling.
+   If .scrollbar class is used on specific elements, those would need separate dark variants if different from global.
+*/
   

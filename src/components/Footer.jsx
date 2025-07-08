@@ -29,7 +29,7 @@ const CompactPremiumFooter = () => {
       {/* Back to top button */}
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 z-50 bg-gradient-to-r from-purple-600 to-blue-600 text-white p-3 rounded-full shadow-2xl transition-all duration-500 hover:scale-110 hover:shadow-purple-500/25 ${
+        className={`fixed bottom-8 right-8 z-50 bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-700 dark:to-blue-700 text-white dark:text-gray-200 p-3 rounded-full shadow-2xl transition-all duration-500 hover:scale-110 hover:shadow-purple-500/25 dark:hover:shadow-purple-600/25 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16'
         }`}
       >
@@ -37,10 +37,10 @@ const CompactPremiumFooter = () => {
       </button>
 
       {/* Compact Footer */}
-      <footer className="relative bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-white overflow-hidden">
+      <footer className="relative bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 dark:from-black dark:via-purple-900/80 dark:to-black text-white dark:text-gray-200 overflow-hidden">
         {/* Animated background */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 animate-pulse"></div>
+        <div className="absolute inset-0 opacity-10 dark:opacity-15">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 dark:from-purple-600/20 dark:to-cyan-600/20 animate-pulse"></div>
         </div>
 
         <div className="relative z-10 max-w-6xl mx-auto px-6 py-8">
@@ -48,11 +48,11 @@ const CompactPremiumFooter = () => {
             
             {/* Brand & Contact */}
             <div className="text-center md:text-left">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent mb-2">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 dark:from-purple-500 dark:to-cyan-500 bg-clip-text text-transparent mb-2">
                 Abhishek Katale
               </h3>
-              <p className="text-gray-300 text-sm">
-                Software Engineer <span className="text-purple-400">abhishekkatale427@gmail.com</span>
+              <p className="text-gray-300 dark:text-gray-400 text-sm">
+                Software Engineer <span className="text-purple-400 dark:text-purple-500">abhishekkatale427@gmail.com</span>
               </p>
             </div>
 
@@ -63,7 +63,7 @@ const CompactPremiumFooter = () => {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="p-3 bg-white/10 rounded-lg text-gray-300 hover:text-white hover:bg-white/20 backdrop-blur-sm border border-white/10 hover:border-purple-400/50 transition-all duration-300 hover:scale-110 group"
+                  className="p-3 bg-white/10 dark:bg-gray-800/40 rounded-lg text-gray-300 dark:text-gray-400 hover:text-white dark:hover:text-gray-200 hover:bg-white/20 dark:hover:bg-gray-700/60 backdrop-blur-sm border border-white/10 dark:border-gray-700/50 hover:border-purple-400/50 dark:hover:border-purple-500/50 transition-all duration-300 hover:scale-110 group"
                 >
                   <social.icon className="w-4 h-4 group-hover:rotate-12 transition-transform" />
                 </a>
@@ -72,12 +72,12 @@ const CompactPremiumFooter = () => {
 
             {/* Copyright */}
             <div className="text-center md:text-right">
-              <div className="flex items-center space-x-2 text-gray-300 mb-1">
+              <div className="flex items-center space-x-2 text-gray-300 dark:text-gray-400 mb-1">
                 <span className="text-sm">Made with</span>
-                <Heart className="w-3 h-3 text-red-400 animate-pulse" />
+                <Heart className="w-3 h-3 text-red-400 dark:text-red-500 animate-pulse" />
                 <span className="text-sm">in India</span>
               </div>
-              <p className="text-gray-400 text-xs">
+              <p className="text-gray-400 dark:text-gray-500 text-xs">
                 © {new Date().getFullYear()} All rights reserved
               </p>
             </div>
@@ -85,7 +85,7 @@ const CompactPremiumFooter = () => {
         </div>
 
         {/* Bottom accent line */}
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500 dark:via-purple-600 to-transparent"></div>
       </footer>
     </>
   );
