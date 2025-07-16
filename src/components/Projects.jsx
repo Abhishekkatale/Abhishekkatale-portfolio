@@ -61,8 +61,22 @@ const PortfolioProjects = () => {
       date: '2024',
       awards: []
     },
-    {
+     {
       id: 4,
+      title: 'Katha Creations',
+      category: 'web',
+      description: 'Building innovative websites that inspire and engage. Digital Marketing platform empowering brands with creative digital strategies.',
+      image: 'https://i.pinimg.com/736x/aa/02/8a/aa028a2f965fb9f6a8f66202821825c8.jpg',
+      technologies: ['React', 'Tailwind CSS', 'MongoDB', 'Stripe', 'Javascript'],
+      github: 'https://github.com/Abhishekkatale/Katha_Creations',
+      live: 'https://kathacreations.vercel.app/',
+      featured: false,
+      stats: { views: '12K', stars: 93, users: '1.2K' },
+      date: '2025',
+      awards: ['Best Data Visualization']
+    },
+    {
+      id: 5,
       title: 'Musitech',
       category: 'web',
       description: 'Building innovative websites that inspire and engage. Digital Marketing platform empowering brands with creative digital strategies.',
@@ -76,7 +90,7 @@ const PortfolioProjects = () => {
       awards: ['Best Data Visualization']
     },
     {
-      id: 5,
+      id: 6,
       title: 'Studio Musigns',
       category: 'web',
       description: 'Studio Musings where every line sketched, every material chosen, every detail considered begins with a musing that blossoms into a concept.',
@@ -90,7 +104,7 @@ const PortfolioProjects = () => {
       awards: []
     },
     {
-      id: 6,
+      id: 7,
       title: 'Krushi Unnati',
       category: 'mobile',
       description: 'Nestled amidst lush greenery, Krushi Unnati is a premium farmstay where modern luxury meets nature\'s serenity.',
